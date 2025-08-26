@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background-color: rgb(131, 168, 127);
+}
+
+#nav-part1{
+    border: 1.5px solid #000;
+    background-color: white;
+}
+
+#nav h2{
+    font-size: 24px;
+    font-weight: 100;
+    border: 1.5px solid #000;
+    border-radius: 50px;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 7px 12px;
+}
+
+ #nav-part3 button{
+    font-size: 16px;
+    font-weight: 500;
+    border: 1.5px solid #000;
+    border-radius: 70px;
+    padding: 7px 12px;
+}
+
+#btn2{
+    background-color: red;
+}
+
+#nav-part4 h1{
+    background-color: rgb(142, 202, 238);
+    font-size: 50px;
+    font-weight: 500;
+    display: flex;
+    align-items: start;
+    justify-content:start;
+    position: absolute;
+    top: 25%;
+    left: 7%;
+}
+
+#nav-part4 h3{
+    background-color: #f9f4f6;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    align-items: start;
+    justify-content:start;
+    position: absolute;
+    top: 35%;
+    left: 7%;
+}
+
+#nav-part4 button{
+    font-size: 16px;
+    font-weight: 400;
+    border: 1.5px solid #000;
+    border-radius: 30px;
+    padding: 7px 12px;
+    position: absolute;
+    bottom:5%;
+    left: 10%;
+}
+
+#kk1{
+    background-color: rgb(145, 157, 211);
+}
+
+img{
+    object-fit: cover;
+    height: 450px;
+    width: 350px;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    border: 1.5px solid #000;
+    border-radius: 60px;
+    background-color: #a6f1fb;
+}
+
+#i11{
+    rotate: -40deg;
+}
+#i12{
+    rotate: -30deg;
+}
+#i13{
+    rotate: -20deg;
+}
+#i14{
+    rotate: 40deg;
+}
+#i15{
+    rotate: 30deg;
+}
+#i16{
+    rotate: 20deg;
+}
