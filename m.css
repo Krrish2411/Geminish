@@ -2,122 +2,170 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
-html , body {
+
+html ,body {
     height: 100%;
     width: 100%;
 }
 
 #main{
-    height: 100px;
-    width: 100%;
-    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #111;
+    overflow: hidden;
 }
 
 #nav{
-    height: 100px;
-    width: 100%;
+    background-image: linear-gradient( to bottom, #ddfc16 ,#ffffffb5);
+    position: absolute;
+    width:65vw;
+    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 30px;
-    background-color: rgb(131, 168, 127);
+    align-items: top;
+    justify-content: space-between ;
+    padding: 8vh 5vw;
+    border-radius: 2vw;
+}
+
+#nleft img{
+    height: 12vh;
+    width: 6vw;
+    position: absolute;
+    border: 1.5px solid #fff;
+    border-radius: 100px;
+    object-fit: cover;
+    align-items: top;
+}
+
+#nleft h2{
+    font-size: 2vw;
+    position: absolute;
+    font-weight: 400;
+    top: 21vh;
+}
+
+#nleft h3{
+    font-size: 1.5vw;
+    position: absolute;
+    font-weight: 400;
+    top: 27vh;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    margin-top: 0.5vh;
+}
+
+#nav1{
+    position: absolute;
+    top: 60vh;
+    width:65vw;
+    height: 40vh;
+}
+
+#nav1 h1{
+    font-size: 7vw;
+    font-weight: 200;
+    position: absolute;
+    top: 0vh ;
+    margin-bottom: 1vh;
+}
+
+.k1{
+    font-size: 6vw;
+    font-weight: 300;
+    position: absolute;
+    top: 13vh ;
+    opacity: 0.5;
+}
+
+#icon{
+    position: absolute;
+    top: 32vh;
+    font-size: 2vw;
+    padding: 1vh 1vw;
+    background-color: #000;
+    border-radius: 2vw;
+    color: white;
+    cursor: pointer;
+    gap: 1vw;
+}
+
+#nright button{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1vw;
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    padding:1.2vw 3.5vw;
+    background-color: #111;
+    color: #fff;
 }
 
 #nav-part1{
-    border: 1.5px solid #000;
-    background-color: white;
+    position: absolute;
+    right: 0;
+    width: 35vw;
+    height: 100vh;
+    background-color: #000;
+    padding: 4vw 4.5vw;
 }
-
-#nav h2{
-    font-size: 24px;
+#nav-part1 h1{
+    font-size: 4vw;
     font-weight: 100;
-    border: 1.5px solid #000;
-    border-radius: 50px;
-    background-color: white;
+    opacity: 0.5;
+    color: #dbdfe188;
+    margin-bottom: 1vh;
+}
+
+#nav-part1 h2{
+    color: #fff;
+    font-size: 3.5vw;
+    font-weight: 200;
+    letter-spacing: 0.1vw;
+    margin-bottom: 1vh;
+}
+
+#nav-part1 h5 {
+    color: #fff;
+    font-size: 1vw;
+    font-weight: 200;
+    margin-top: 4vh;
+}
+
+form{
+    width: 27vw;
+    height: 55vh;
+}
+
+form button{
+    font-size: 1vw;
+    border: 1px solid #fff;
+    border-radius: 0.6vw;
+    background-color: transparent;
+    color: white;
+    padding: 1.5vh 1vw;
+    margin-top: 2vh;
+    margin-right: 0.8vw;
+    cursor: pointer;
+}
+
+form input{
+    font-size: 1vw;
+    background-color: transparent;
+    color: white;
+    padding: 1vh 7vw;
+    margin-top: 2vh;
+    align-items: start;
     text-transform: uppercase;
-    padding: 7px 12px;
 }
 
- #nav-part3 button{
-    font-size: 16px;
-    font-weight: 500;
-    border: 1.5px solid #000;
-    border-radius: 70px;
-    padding: 7px 12px;
-}
-
-#btn2{
-    background-color: red;
-}
-
-#nav-part4 h1{
-    background-color: rgb(142, 202, 238);
-    font-size: 50px;
-    font-weight: 500;
-    display: flex;
-    align-items: start;
-    justify-content:start;
-    position: absolute;
-    top: 25%;
-    left: 7%;
-}
-
-#nav-part4 h3{
-    background-color: #f9f4f6;
-    font-size: 30px;
-    font-weight: 500;
-    display: flex;
-    align-items: start;
-    justify-content:start;
-    position: absolute;
-    top: 35%;
-    left: 7%;
-}
-
-#nav-part4 button{
-    font-size: 16px;
-    font-weight: 400;
-    border: 1.5px solid #000;
-    border-radius: 30px;
-    padding: 7px 12px;
-    position: absolute;
-    bottom:5%;
-    left: 10%;
-}
-
-#kk1{
-    background-color: rgb(145, 157, 211);
-}
-
-img{
-    object-fit: cover;
-    height: 450px;
-    width: 350px;
-    position: absolute;
-    right: 10%;
-    top: 30%;
-    border: 1.5px solid #000;
-    border-radius: 60px;
-    background-color: #a6f1fb;
-}
-
-#i11{
-    rotate: -40deg;
-}
-#i12{
-    rotate: -30deg;
-}
-#i13{
-    rotate: -20deg;
-}
-#i14{
-    rotate: 40deg;
-}
-#i15{
-    rotate: 30deg;
-}
-#i16{
-    rotate: 20deg;
+#btn{
+    cursor: pointer;
+    font-size: 1vw;
+    background-color: #ddfc16 ;
+    color: #000;
+    padding: 1.6vh 11vw;
+    margin-top: 2vh;
 }
